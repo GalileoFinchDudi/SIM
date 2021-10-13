@@ -8,12 +8,55 @@
     <artifactId>sim-swarm</artifactId>
     <version>1.0</version>
   </parent>
+  <groupId>com.swger.sim</groupId>
   <name>im-business</name>
   <artifactId>im-business</artifactId>
   <properties>
   </properties>
 
   <dependencies>
+    <dependency>
+      <groupId>io.netty</groupId>
+      <artifactId>netty-all</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.swger.sim</groupId>
+      <artifactId>im-protocol</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.swger.sim</groupId>
+      <artifactId>im-common</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>redis.clients</groupId>
+      <artifactId>jedis</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jdbc</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.kafka</groupId>
+      <artifactId>kafka_2.12</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.kafka</groupId>
+      <artifactId>kafka-clients</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+    </dependency>
 
   </dependencies>
 

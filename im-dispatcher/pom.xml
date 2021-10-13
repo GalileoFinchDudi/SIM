@@ -9,11 +9,10 @@
     <version>1.0</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.swger.sim</groupId>
-  <packaging>jar</packaging>
-  <artifactId>im-common</artifactId>
 
-  <name>im-common</name>
+  <artifactId>im-dispatcher</artifactId>
+
+  <name>im-dispatcher</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

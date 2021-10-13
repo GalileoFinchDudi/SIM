@@ -11,15 +11,86 @@
   <name>sim</name>
   <description>sim</description>
 
-  <properties></properties>
+  <properties>
+    <netty.version>4.1.39.Final</netty.version>
+    <jedis.version>3.1.0</jedis.version>
+    <mysql-connector.version>8.0.17</mysql-connector.version>
+    <spring-jdbc.version>5.2.0.RELEASE</spring-jdbc.version>
+    <kafka.version>1.0.1</kafka.version>
+    <kafka-clients.version>1.0.1</kafka-clients.version>
+    <fastjson.version>1.2.62</fastjson.version>
+    <google-protobuf-java.version>3.18.1</google-protobuf-java.version>
+    <junit.version>4.11</junit.version>
+    <sim-common.version>1.0</sim-common.version>
+    <sim-protocol.version>1.0</sim-protocol.version>
+  </properties>
 
   <dependencyManagement>
-
+    <dependencies>
+      <dependency>
+        <groupId>io.netty</groupId>
+        <artifactId>netty-all</artifactId>
+        <version>${netty.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>redis.clients</groupId>
+        <artifactId>jedis</artifactId>
+        <version>${jedis.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>${mysql-connector.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-jdbc</artifactId>
+        <version>${spring-jdbc.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.kafka</groupId>
+        <artifactId>kafka_2.12</artifactId>
+        <version>${kafka.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.kafka</groupId>
+        <artifactId>kafka-clients</artifactId>
+        <version>${kafka-clients.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>fastjson</artifactId>
+        <version>${fastjson.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.protobuf</groupId>
+        <artifactId>protobuf-java</artifactId>
+        <version>${google-protobuf-java.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>${junit.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.swger.sim</groupId>
+        <artifactId>im-protocol</artifactId>
+        <version>${sim-protocol.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.swger.sim</groupId>
+        <artifactId>im-common</artifactId>
+        <version>${sim-common.version}</version>
+      </dependency>
+    </dependencies>
   </dependencyManagement>
 
   <modules>
     <module>im-business</module>
     <module>im-common</module>
+    <module>im-dispatcher</module>
+    <module>im-gateway-tcp</module>
+    <module>im-protocol</module>
   </modules>
 
   <build>
